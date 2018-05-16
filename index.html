@@ -10,6 +10,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>AAKSHANK IET DAVV's Annual Cultural Fest | Central India's Largest Cultural Fest </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
+<meta name="theme-color" content="#04214e">
+<link rel="icon" type="image/jpeg" sizes="16x16" href="images/16x16.jpeg">
+<link rel="icon" type="image/jpeg" sizes="32x32" href="images/32x32.jpeg">
 <meta name="keywords" content="Rock Music Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -28,12 +31,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/particle.css" rel="stylesheet">
 <link href="css/form.css" rel="stylesheet">
 <!-- font -->
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<!-- //font -->
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <!-- //font -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.js"></script>
-	<script type="text/javascript" async="" src="https://js.driftt.com/include/1518444600000/spc9sxgn8zes.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -48,11 +54,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script>
 		 new WOW().init();
 	</script>
-<!-- //animation --> 
+	<link href="css/rotating-card.css" rel="stylesheet" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
+<!-- //animation --> 
 <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
+<!-- Start of Async Drift Code -->
+<script>
+	!function() {
+		var t;
+		if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+				t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+				t.factory = function(e) {
+					return function() {
+						var n;
+						return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+					};
+				}, t.methods.forEach(function(e) {
+			t[e] = t.factory(e);
+		}), t.load = function(t) {
+			var e, n, o, i;
+			e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+					o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+					n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+		});
+	}();
+	drift.SNIPPET_VERSION = '0.3.1';
+	drift.load('kfr7khertd3t');
+</script>
+<!-- End of Async Drift Code -->
+<script>
+	drift.on('load',function(api, payload) {
+		// interact with the api here
+		jQuery('.widget-container').css('right','10px !important');
+	})
+</script>
 </head>
 <body>
 	<div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);z-index:100;" class="loader"><br><br>
@@ -97,11 +135,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<nav>
 								<ul class="nav navbar-nav">
 									<li class="active"><a href="index.html">Home</a></li>
-									<li><a href="#about" class="scroll">About</a></li>
+									<li><a href="#indro" class="scroll">About</a></li>
+									<li><a href="#team" class="scroll">Previous Stars</a></li>
 									<li><a href="#events" class="scroll">Events</a></li>
-									<li><a href="#team" class="scroll">Team</a></li>
-									<li><a href="#news" class="scroll">News</a></li>
-									<li><a href="#mail" class="scroll">Mail Us</a></li>
+									<li><a href="#afterMovie" class="scroll">After Movie</a></li>
+									<li><a href="#campus" class="scroll">Participation Forms</a></li>
+									<li><a href="#tmember" class="scroll">Team</a></li>
+									<li><a href="#contact" class="scroll">Contact Us</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -131,11 +171,125 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="w3ls-border"> </div>
 			</div>
 			<div class="introduction-info">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus iaculis lacus in pharetra. Morbi tincidunt nisi et bibendum varius. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin vulputate arcu consequat enim vulputate posuere. Aenean malesuada quam vitae mi ullamcorper, vel lobortis risus rutrum.</p>
+				<p>Started by a group of enthusiastic IETians, in 2001, in order to provide a grooming stage to the budding talents in the Institute, Aakshank has transformed itself into the most zestful and extraordinary cultural bonanza in Central India.<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;This megafest include wide array of events ranging from competitions in varied geners like Dance, Drama, Singing to Star Night and DJ Night, Stunt Mania and plenty of informals. </p>
 			</div>
 		</div>
 	</div>
 	<!-- //introduction -->
+
+	<!-- star -->
+	<div class="w3l-heading">
+				<h3>Stars of 2018</h3>
+				<div class="w3ls-border"> </div>
+				<br>
+	</div>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="card-container col-md-6">
+		<center>
+         <div class="card irfan">
+             <div class="front">
+
+                 <!--<div class="user">-->
+                     <!--<img class="se polygon-clip-hexagon" src="images/Irfan2.jpeg" />-->
+                 <!--</div>-->
+                 <div class="content">
+                     <div class="main">
+						 <div class="w3l-heading">
+							 <h3 style="color: black">Mohammed Irfan</h3>
+
+							 <br>
+						 </div>
+
+
+                         <p class="text-center celebText" style="padding-top: 50px; color: #05112f;font-family: 'Raleway';font-size:2em">LIVE CONCERT <br><br>24<sup>th</sup> February , 2018  <br><br>6 P.M Onwards<br><br>LIVE AT AAKSHANK <br><br> IET- DAVV </p>
+                     </div>
+                 </div>
+             </div> <!-- end front panel -->
+             <div class="back">
+                 <div class="header">
+					 <div class="w3l-heading">
+						 <h3 style="color: black">Mohammed Irfan Songs</h3>
+
+						 <br>
+					 </div>
+
+                 </div>
+                 <div class="content">
+                     <div class="main">
+                         <div class="stats-container">
+                         <ul style="font-size: 20px; font-family:'Arvo', serif; color: #05112f;">
+                             <li> <b> Phir Mohabbat (Murder 2) </b> </li> <br>
+                             <li> <b> Muskurane Ki Wajah (Citylights) </b></li> <br>
+                             <li> <b> Banjara (EK Villain) </b></li> <br>
+                             <li> <b> Dard Dilon Ke (The Xpose) </b> </li> <br>
+                             <li> <b> Yaariyan (Barish) </b></li> <br>
+                             <li> <a href="https://pagalworld.info/mohammed-irfan-hit-mp3-songs/files.html" target="_blank" style="color:#000">More Songs..</a></li><br>
+                         </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div> <!-- end back panel -->
+         </div> <!-- end card -->
+     </center>
+     </div> <!-- end card-container -->
+		<div class="col-md-3"></div>
+		</div>
+	<!--progressiveBrothers-->
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="card-container col-md-6">
+			<center>
+				<div class="card progressiveBrothers">
+					<div class="front">
+
+						<!--<div class="user">-->
+						<!--<img class="se polygon-clip-hexagon" src="images/Irfan2.jpeg" />-->
+						<!--</div>-->
+						<div class="content">
+							<div class="main">
+								<div class="w3l-heading">
+									<h3 style="color: black">Progressive Brothers</h3>
+
+									<br>
+								</div>
+
+
+								<p class="text-center celebText" style="padding-top: 50px; color: #05112f;font-family: 'Raleway';font-size:2em">EDM NIGHT <br><br>25<sup>th</sup> February , 2018  <br><br>6 P.M Onwards<br><br>LIVE AT AAKSHANK <br><br> IET- DAVV </p>
+							</div>
+						</div>
+					</div> <!-- end front panel -->
+					<div class="back">
+						<div class="header">
+							<div class="w3l-heading">
+								<h3 style="color: black">Progressive Brothers Music</h3>
+
+								<br>
+							</div>
+
+						</div>
+						<div class="content">
+							<div class="main">
+								<div class="stats-container">
+									<ul style="font-size: 20px; font-family:'Arvo', serif; color: #05112f;">
+										<li> <b>Magik </b> </li> <br>
+										<li> <b> Hijack </b></li> <br>
+										<li> <b> Walking on the Beach </b></li> <br>
+										<li> <b> Locura Interna </b> </li> <br>
+										<li> <b> One Year </b></li> <br>
+										<li> <a href="https://www.beatport.com/artist/progressive-brothers/230238" target="_blank" style="color:#000">More Songs..</a></li><br>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div> <!-- end back panel -->
+				</div> <!-- end card -->
+			</center>
+		</div> <!-- end card-container -->
+		<div class="col-md-3"></div>
+	</div>
+	<!-- //star -->
 
 <!-- team -->
 	<div class="team jarallax" id="team">
@@ -146,26 +300,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="w3ls-border about-border"> </div>
 				</div>
 				<div class="agileits-team-grids">
-					<div class="col-md-3 agileits-team-grid">
-						<div class="team-info star" >
+					<div class="col-md-3 col-xs-6 agileits-team-grid">
+						<div class="wow slideInUp team-info star" >
 							<img src="images/events/papon.jpg" alt="" />
 							<div class="star-title">PAPON</div>
 						</div>
 					</div>
-					<div class="col-md-3 agileits-team-grid">
-						<div class="team-info dj">
+					<div class="col-md-3 col-xs-6 agileits-team-grid">
+						<div class="wow slideInUp team-info dj" data-wow-delay=".5s">
 							<img src="images/events/chinappa.jpg" alt="" />
 							<div class="star-title">NIKHIL CHINAPPA</div>
 						</div>
 					</div>
-					<div class="col-md-3 agileits-team-grid">
-						<div class="team-info dj">
+					<div class="col-md-3 col-xs-6 agileits-team-grid">
+						<div class="wow slideInUp team-info" data-wow-delay=".5s">
 							<img src="images/events/willy.jpg" alt="" />
-							<div class="star-title">DJ WILLY</div>
+							<div class="star-title">DJ Willy</div>
 						</div>
 					</div>
-					<div class="col-md-3 agileits-team-grid">
-						<div class="team-info star">
+					<div class="col-md-3 col-xs-6 agileits-team-grid">
+						<div class="wow slideInUp team-info star">
 							<img src="images/events/nikhild.jpg" alt="" />
 							<div class="star-title">NIKHIL D'SOUZA</div>
 						</div>
@@ -176,21 +330,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 	<!-- //team -->
+
 	<!-- gallery -->
 	<div class="gallery" id="events">
 		<div class="container">
 			<div class="w3l-heading">
-				<h3>Day Events</h3>
+				<h3>Events</h3>
 				<div class="w3ls-border"> </div>
+				<br>
 			</div>
 			<div class="bs-example bs-example-tabs">
 					<div id="myTabContent" class="tab-content">
-						<div>
 							<div class="w3_tab_img">
-								<div class="col-sm-3 w3_tab_img_left">
+								<div class="col-sm-3 w3_tab_img_left wow zoomIn" data-wow-delay=".3s">
 									<div class="demo">
 										<a class="cm-overlay" href="images/g1.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g1.jpg" alt=" " class="img-responsive" />
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/events1//g1.jpg" alt=" " class="img-responsive" />
 										  </figure>
 										</a>
 									</div>
@@ -198,87 +353,89 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<h5>Paintball</h5>
 									</div>
 								</div>
-								<div class="col-sm-3 w3_tab_img_left">
+								<div class="col-sm-3 w3_tab_img_left wow zoomIn" data-wow-delay=".3s">
 									<div class="demo">
-										<a class="cm-overlay" href="images/g2.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g2.jpg" alt=" " class="img-responsive" />
+										<a class="cm-overlay" href="images/events1/g2.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/events1/g2.jpg" alt=" " class="img-responsive" />
 										  </figure>
+										</a>
+									</div>
+									<div class="agile-gallery-info">
+										<h5>Mridaksh</h5>
+									</div>
+								</div>
+								<div class="col-sm-3 w3_tab_img_left  wow zoomIn" data-wow-delay=".3s">
+									<div class="demo">
+										<a class="cm-overlay" href="images/events1/g3.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/events1/g3.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+									<div class="agile-gallery-info">
+										<h5>Naach</h5>
+									</div>
+								</div>
+								<div class="col-sm-3 w3_tab_img_left wow zoomIn" data-wow-delay=".3s">
+									<div class="demo">
+										<a class="cm-overlay" href="images/events1/g4.jpg">
+										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/events1/g4.jpg" alt=" " class="img-responsive" />
+										</figure>
+										</a>
+									</div>
+									<div class="agile-gallery-info">
+										<h5>Goonj</h5>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="w3_tab_img">
+								<div class="col-sm-3 w3_tab_img_left wow zoomIn" data-wow-delay=".3s">
+									<div class="demo">
+										<a class="cm-overlay" href="images/events1/g5.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/events1/g5.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+									<div class="agile-gallery-info">
+										<h5>StuntMania</h5>
+									</div>
+								</div>
+								
+								<div class="col-sm-3 w3_tab_img_left wow zoomIn" data-wow-delay=".3s">
+									<div class="demo">
+										<a class="cm-overlay" href="images/events1/g6.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/events1/g6.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+									<div class="agile-gallery-info">
+										<h5>Volleyball</h5>
+									</div>
+								</div>
+								<div class="col-sm-3 w3_tab_img_left  wow zoomIn" data-wow-delay=".3s">
+									<div class="demo">
+										<a class="cm-overlay" href="images/events1/g7.jpg">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/events1/g7.jpg" alt=" " class="img-responsive" />
+											</figure>
+										</a>
+									</div>
+									<div class="agile-gallery-info">
+										<h5>Flash Mob</h5>
+									</div>
+								</div>
+								<div class="col-sm-3 w3_tab_img_left wow zoomIn" data-wow-delay=".3s">
+									<div class="demo">
+										<a class="cm-overlay" href="images/events1/g8.JPG">
+											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/events1/g8.JPG" alt=" " class="img-responsive" />
+											</figure>
 										</a>
 									</div>
 									<div class="agile-gallery-info">
 										<h5>Zorbing</h5>
 									</div>
 								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g3.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g3.jpg" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>Street Football</h5>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g4.jpg">
-										  <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g4.jpg" alt=" " class="img-responsive" />
-										</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>Street Cricket</h5>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g5.jpg">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g5.jpg" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>Street Volleyball</h5>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g6.jpg">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g6.jpg" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>Laser Tag</h5>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g7.jpg">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g7.jpg" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>LAN-Gaming</h5>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g1.jpg">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g1.jpg" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>X-BOX</h5>
-									</div>
-								</div>
 								<div class="clearfix"> </div>
-							</div>
-						</div>
-						
+							</div>						
 					</div>
 			</div>
 			<script src="js/jquery.tools.min.js"></script>
@@ -293,419 +450,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //gallery -->
 	
-	<!-- news -->
-	<div class="news" id="news">
-		<div class="container">
+	<!-- aftermovie -->
+	<div class="news" id="afterMovie" style="padding-top:0;">
+		<div class="container" style="text-align:center;">
 			<div class="w3l-heading">
-				<h3>Our news</h3>
+				<br><br>
+				<h3>After Movie 2k17</h3>
 				<div class="w3ls-border"> </div>
 			</div>
-			<div class="wthree-news-grids">
-				<!-- date -->
-				<div id="design" class="date">
-					<div id="cycler">   
-						<div class="wthree-news-grid">
-							<div class="wthree-news-left">
-								<h4>03 <span>Jan 2017</span></h4>
-							</div>
-							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal"> Lorem ipsum dolor sit amet</a>
-								<p>Morbi felis sapien, pulvinar quis pharetra rutrum, auctor sit amet ipsum. Aliquam dictum massa ut porttitor ultricies. Duis non enim eros. Aliquam sed porttitor lectus.</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="wthree-news-grid">
-							<div class="wthree-news-left">
-								<h4>08 <span>Sept 2017</span></h4>
-							</div>
-							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal"> Cras vestibulum dapibus <span class="blinking"><img src="images/new.png" alt="" /></span></a>
-								<p>Curabitur egestas porttitor erat quis cursus. Aliquam nec sapien urna. Curabitur tincidunt dolor sed metus maximus dapibus. Integer ligula enim, condimentum id commodo eget</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="wthree-news-grid">
-							<div class="wthree-news-left">
-								<h4>17 <span>July 2017</span></h4>
-							</div>
-							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal"> Fusce id molestie mauris</a>
-								<p>Cras blandit felis augue, nec faucibus lectus hendrerit vitae. Vestibulum rutrum, magna id pellentesque fermentum, est risus scelerisque leo, at consequat nunc sem non tortor.</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="wthree-news-grid">
-							<div class="wthree-news-left">
-								<h4>15 <span>Aug 2017</span></h4>
-							</div>
-							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal"> Aliquam vulputate arcu enim <span class="blinking"><img src="images/new.png" alt="" /></span></a>
-								<p>Aliquam sed porttitor lectus. Donec sagittis magna non eros convallis, dapibus iaculis nunc tincidunt. Pellentesque quam nisi, cursus non vestibulum ac, vehicula eu tortor.</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="wthree-news-grid">
-							<div class="wthree-news-left">
-								<h4>24 <span>Sept 2017</span></h4>
-							</div>
-							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal"> Donec ac turpis aliquet</a>
-								<p>Curabitur facilisis fermentum gravida. Nunc suscipit nec enim ut suscipit. Mauris mollis lectus at mi vehicula rutrum vel non dolor. Nulla ut purus arcu. Pellentesque sed finibus</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="wthree-news-grid">
-							<div class="wthree-news-left">
-								<h4>24 <span>Oct 2017</span></h4>
-							</div>
-							<div class="date-text">
-								<a href="#" data-toggle="modal" data-target="#myModal"> Morbi nec justo ut ex rhoncus luctus</a>
-								<p>Nullam accumsan imperdiet elementum. Quisque volutpat sapien sed ipsum condimentum elementum. Suspendisse potenti. Maecenas fermentum justo sit amet interdum viverra.</p>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-					</div>						
-					<script>
-						function blinker() {
-							$('.blinking').fadeOut(500);
-							$('.blinking').fadeIn(500);
-						}
-						setInterval(blinker, 1000);
-					</script>
-					<script>
-						function cycle($item, $cycler){
-							setTimeout(cycle, 2000, $item.next(), $cycler);
-												
-							$item.slideUp(1000,function(){
-								$item.appendTo($cycler).show();        
-							});
-						}
-						cycle($('#cycler div:first'),  $('#cycler'));
-					</script>
-				</div>
-				<!-- //date -->
+			<div class="row">
+				<iframe src="https://www.youtube.com/embed/Ob8r8hxmB8s" class="wow rollIn" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
-	<!-- //news -->
-	<!-- team -->
-    <div class ="team-members" id="webTeam"><div class="w3l-heading about-heading">
-				<h3>Team members</h3>
-				<br><br>
-			</div>
-    <div class="container-fluid">
-    	<div class="row">
-    	  <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        <FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>
-    	   <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        	<FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>
-    	   <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        	<FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>
-    	   <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        	<FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>   
-    	   	
-    </div><br><br>
-    <div class="row">
-    	  <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        <FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>
-    	   <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        	<FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>
-    	   <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        	<FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>
-    	   <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        	<FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>   
-    	   	
-    </div><br><br>
-    <div class="row">
-    	  <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        <FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>
-    	   <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        	<FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>
-    	   <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        	<FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>
-    	   <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        	<FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>   
-    	   	
-    </div><br><br>
-    <div class="row">
-    	  <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        <FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>
-    	   <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        	<FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button>
-							</p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>
-    	   <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        	<FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div>
-    	    </div>
-    	   </div>
-    	   <div class="col-md-3 col-xs-6">
-    	    <div class="container-fluid">
-    	    	<div class="row">
-    	    		<div class="col-md-3">
-    	    		  <div class="logo" aria-hidden="true" >
-					<img src="images/t1.jpg" class="img-circle" height="60" width="60">
-				      </div>
-    	   	        </div>
-    	   	        <div class="col-md-9">
-    	   	        	<FONT color="white">
-    	   	        	<h4>Name</h4>
-							<p><button class="btn"><i class="fa fa-facebook-square" aria-hidden="true""></i></button>
-							   <button class="btn"><i class="fa fa-instagram" aria-hidden="true""></i></button></p></FONT>
-    	   	        </div>
-                </div><br><br>
-    	    </div>
-    	   </div>   
-    	   	
-    </div>
-    </div>
-    </div>
-    <!-- //team -->
-	<!-- modal -->
-	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header"> 
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						<h4 class="modal-title">Rock Music</h4>
-						<h5>24 Sept 2017</h5>
-					</div> 
-					<div class="modal-body">
-					<div class="agileits-w3layouts-info">
-						<img src="images/1.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //modal -->
+	<!-- /aftermovie -->
 
 <!--Forms-->
 	<section id="campus" class="row">
-		<div class="col-md-6">
-			<div class="" style="border-right:1px dashed #ccc;">
+		<div class="col-md-6" style="text-align: center">
+			<div id="ca">
 				<h3>
 					CAMPUS AMBASSADOR
 				</h3>
@@ -733,10 +496,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<input type="text" name="year" placeholder="Year of Study.">
 					</div>
 					<div class="inp"><label>What makes you unique to be appointed as a campus ambassador?</label>
-						<input type="text" name="reason">
+						<textarea rows="6" name="reason"></textarea>
 					</div>
 					<div class="inp"><label>Would you like to mention some position's of responsibility you hold in your college !!</label>
-						<input type="text" name="position">
+						<textarea rows="6" name="position"></textarea>
 					</div>
 
 					<div class="col-md-12">
@@ -744,11 +507,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<center><input type="submit" value="SUBMIT" class="bt btn"></center>
 						<br><br><br>
 					</div>
-				</form>					
+				</form>
 			</div><!-- /.container -->
 		</div><!-- /.pattern -->
 
-		<div class="col-md-6">
+		<div class="col-md-6" style="text-align: center">
 			<div id='nborder'>
 				<h3>
 					NAACH REGISTRATION
@@ -786,7 +549,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						Alternate  Number :
 						<input type="number" name="alt" class="form-control" placeholder="Alternate Number" required>	
 					</div>
-					<div class="col-md-9">
+					<div class="col-md-10">
 						<input type="submit" class="bt btn" value="SUBMIT" >	
 					</div>
 				</form>		
@@ -795,10 +558,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</section>
 		<!-- Form Section End -->
 
+<!--team-->
+<div id="tmember">
+	<div class="w3l-heading">
+		<h3 style="font-size:1em;">Designed and Developed By</h3>
+		<br>
+	</div>
+	<svg class="clip-svg">
+	  <defs>
+	    <clipPath id="polygon-clip-hexagon" clipPathUnits="objectBoundingBox">
+	      <polygon points="0.5 0, 1 0.25, 1 0.75, 0.5 1, 0 0.75, 0 0.25" />
+	    </clipPath>
+	  </defs>
+	</svg>
+
+	<div class="polygon-each-img-wrap" style="">
+		  <img src="images/team/aditya.jpeg" alt="demo-clip-heptagon" class="dp polygon-clip-hexagon">
+		  <div class="t-info junior">
+		 	AADITYA SHRIVASTAVA
+		  </div>
+		</div>	
+	<div class="polygon-each-img-wrap">
+	  <img src="images/team/pavan.jpg" alt="demo-clip-heptagon" class="se polygon-clip-hexagon">
+		  	<div class="t-info">
+		 		PAVAN CHOUDHARY
+			</div>
+	</div>
+	<div class="polygon-each-img-wrap" style="">
+		  <img src="images/team/Nishi.JPG" alt="demo-clip-heptagon" class="dp polygon-clip-hexagon">
+		  <div class="t-info junior">
+		 	NISHI CHAUHAN
+		  </div>
+		</div>
+</div>
+<!--tem end-->
+
 	<!-- contact -->
-	<div class="contact-form">
+	<div class="contact-form" id="contact">
 		<div class="col-md-4 contact-form-left">
-			<h5>Our Location</h5>
+			<h5>Fun Begins Here!</h5>
 			<div class="address-grids">
 				<div class="address-grid">
 					<div class="address-icon">
@@ -817,8 +615,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<i class="fa fa-phone" aria-hidden="true"></i>
 					</div>	
 					<div class="address-info">
-						<p>+1 234 567 8901<br>
-						+1 345 678 9012</p>
+						<p>+91 8962569795
+							<br>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -827,7 +625,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<i class="fa fa-envelope" aria-hidden="true"></i>
 					</div>	
 					<div class="address-info">
-						<p><a href="mailto:example@email.com">mail@example.com</a></p>
+						<p><a href="mailto:example@email.com">info@aakshank.org</a></p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -856,6 +654,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript" src="js/particles.min.js"></script>
 	<script src="js/app.js"></script>
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-110940230-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+		
+
 	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {
