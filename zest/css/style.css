@@ -956,6 +956,13 @@ article .meta .user{
 	background: url(../img/sidebar-corner.png) no-repeat;
 }
 
+.floated-content p{
+	color: black;
+}
+
+.fullwidth-content {
+	color: black;
+}
 
 /* FOOTER ------------------------------------------------------------*/
 
