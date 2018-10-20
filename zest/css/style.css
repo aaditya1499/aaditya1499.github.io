@@ -4,9 +4,10 @@
 @import url('comments.css');
 @import url('widgets.css');
 
+/* Import Font */
 @font-face {
 	font-family: 'Yanone Kaffeesatz';
-	src: url('YanoneKaffeesatz-Thin.otf');
+	src: url('YanoneKaffeesatz-Light.otf');
 }
 
 /* GENERAL ------------------------------------------------------------*/
@@ -212,7 +213,7 @@ nav a{
 	display: block;
 	overflow: hidden;
 	padding: 0px 0px 7px 0px;
-	text-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
+	/* text-shadow: 2px 2px 0px rgba(0, 0, 0, .6); */
 }
 
 
