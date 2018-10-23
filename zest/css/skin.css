@@ -126,8 +126,8 @@ nav a{ color: black; }
 
 /* BLOG ------------------------------------------------------------*/
 
-#posts-list .feature-image,
-#post-content .feature-image{ background: #ea4c88 url(../img/plus.png) center center no-repeat; }
+/* #posts-list .feature-image,
+#post-content .feature-image{ background: #ea4c88 url(../img/plus.png) center center no-repeat; } */
 
 article .meta{
 	border-top: 1px solid #cecece;

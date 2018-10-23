@@ -792,8 +792,10 @@ nav a{
 
 #posts-list .feature-image:hover img,
 #posts-content .feature-image:hover img{
-	opacity: 0.2;
+	opacity: 0.8;
 }
+
+
 
 #posts-list .post-heading{
 	margin-bottom: 20px;
@@ -996,4 +998,18 @@ footer .wrapper,
 	float: right;
 }
 
+.product-info-sections {
+	margin-top: 20px;
+}
+
+.row {
+	margin-left: 20px;
+}
+
+.table-spans {
+	display: inline-block;
+	margin-right: 100px;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
 
