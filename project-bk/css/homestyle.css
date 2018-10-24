@@ -28,7 +28,10 @@ li {
 }
 
 .header {
-    border-bottom: 2px solid #E3E3E3;
+    /* border-bottom: 2px solid #E3E3E3; */
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(227,227,227,1);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(227,227,227,1);
+    box-shadow: 0px 2px 2px 0px rgba(227,227,227,1);
 }
 
 .navbar{
@@ -48,6 +51,7 @@ li {
 
 .navbar-brand{
     padding-top: 10px !important;
+    margin-top: -2px;
 }
 
 .nav-links {
@@ -92,8 +96,22 @@ li {
 }
 
 .side-bar-title{
-    display: none !important;
+    display: none;
     width:0;
+}
+
+.phone-show {
+    display: none;
+}
+
+@media only screen and (max-width : 768px) {
+    .side-bar-title {
+        display: block;
+        width: auto;
+    }
+    .phone-show {
+        display: block !important;
+    }
 }
 
 /* side nav bar styles */
