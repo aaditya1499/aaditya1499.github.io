@@ -161,6 +161,20 @@ li {
 }
 /* //1st Section */
 
+.app-section-2 {
+    margin-top: 70px;
+}
+
+.rts-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rts-small-img {
+    width: 80%;
+}
+/* //2nd section */
 .service-heading {
     margin-bottom: 80px;
 }
