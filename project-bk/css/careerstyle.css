@@ -132,26 +132,26 @@ li {
 }
 
 .font5 {
-    font-size:130%;
+    font-size:120%;
     color:#606060;
 }
 
 .font6 {
-    font-size:120%;
+    font-size:110%;
     color:#a0a0a0;
     font-family: 'Montserrat-light';
 }
 
 .career-container {
-    padding-left: 25px;
-    padding-right: 37px;
+    padding-left: 25px !important;
+    padding-right: 37px !important;
 }
 
 .lastline {
     color:rgb(121,121,121);
     font-size:125%;
     margin:35px auto 0px auto;
-    padding-bottom:35px;
+    padding-bottom:5px;
     font-family: 'Montserrat';
 }
 
