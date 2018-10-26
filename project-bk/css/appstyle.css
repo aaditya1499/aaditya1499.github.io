@@ -34,6 +34,10 @@ li {
     -webkit-box-shadow: 0px 2px 2px 0px rgba(227,227,227,1);
     -moz-box-shadow: 0px 2px 2px 0px rgba(227,227,227,1);
     box-shadow: 0px 2px 2px 0px rgba(227,227,227,1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 998;
 }
 
 .navbar{
@@ -118,7 +122,7 @@ li {
 /* //Headeer */
 
 .app-section-1 {
-    margin-top: 80px;
+    margin-top: 150px;
 }
 
 .app-heading,.app-sub-heading {
