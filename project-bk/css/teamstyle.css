@@ -123,12 +123,13 @@ li {
 }
 
 .team-person-img {
-    width: 70%;
+    width: 50%;
 }
 
 .name {
     display: block;
     text-align: center;
+    margin-top: 5px;
     font-family: 'Montserrat-Medium';
 }
 
@@ -137,6 +138,7 @@ li {
     text-align: center;
     font-size: 13px;
     color: #a0a0a0;
+    line-height: 0.7;
 }
 /* side nav bar styles */
 
