@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="css/appstyle.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/resCarousel.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/sidebarNavigation.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    
 </head>
 <body>
     <div class="header">
@@ -53,29 +58,34 @@
                 <a href="#" class="app-store-link"><img src="images/batch_app_store.png" width="40%" alt=""></a>
                 <!-- //app store buttons -->
             </div>
-            <div class="col-md-3 col-md-offset-5">
-                <img src="images/Bahikhata_App_Image.png" width="70%" alt="">
+            <div class="app-image-div col-md-3 col-md-offset-5 col-xs-offset-3 col-xs-8">
+                <img src="images/Bahikhata_App_Image.png" class="app-image" width="70%" alt="">
             </div>
         </div>
         <!-- //Section 1 -->
 
         <div class="app-section-2 container">
             <center><h3 class="service-heading app-heading">Real Time Sync</h3></center>
-            <div class="row rts-row">
-                <div class="col-md-2">
-                    <img src="images/Person.png" class="rts-small-img" alt="">
-                </div>
-                <div class="col-md-4 col-md-offset-1">
-                    <img src="images/Bahikhata_App_Image.png"  width="70%" class="rts-big-image" alt="">
-                </div>
-                <div class="col-md-2 col-md-offset-0">
-                    <img src="images/Person.png" class="rts-small-img" alt="">
+            <div class="row rts-row" style="margin-top:200px;">
+                <div class="carousel-div col-md-offset-0 col-md-12 col-xs-8 col-xs-offset-2">
+                    <img src="images/frameX copy.png"  width="70%" class="rts-big-image img-fix" alt="">
+                    <div class="carousel-pad-left owl-carousel">
+                        <div class="item">
+                            <img src="images/cloud-computing.png" style="background-color:black;" class="rts-small-img" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/share.png" class="rts-small-img" style="background-color:black;" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/book.png" class="rts-small-img" style="background-color:black;" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
     
-        <div class="app-section-3 container" style="margin-top:150px;">
+        <div class="app-section-3 container" style="margin-top:200px;">
             <center><h3 class="service-heading app-heading">How to get the service?</h3></center>
             <div class="row" style="margin-left: 1%;">
                 <div class="col-md-3 col-md-offset-1">
@@ -145,4 +155,25 @@
         </div>
     </div>
 </body>
+<script src="js/resCarousel.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    autoplayTimeout:7000,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        768:{
+            items:3,
+            nav:false
+        },
+    }
+    // autoplayHoverPause:true
+})
+</script>
 </html>
