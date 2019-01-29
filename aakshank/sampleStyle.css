@@ -1,0 +1,69 @@
+body {
+  background-color: #000;
+  margin: 0;
+  overflow: hidden;
+}
+
+h2 {
+  color: White;
+  vertical-align: center;
+}
+
+canvas {
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+#container img {
+  position: absolute;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+/* .title-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+} */
+
+.title-text h1 {
+  margin-bottom: 0;
+}
+
+.title-text h3 {
+  margin-top: 0;
+}
+
+/* .title-text {
+  display: inline-block;
+} */
+
+.title-text h1 {
+  margin-bottom: 0;
+}
