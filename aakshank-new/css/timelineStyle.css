@@ -22,6 +22,12 @@
 .box-2 {
   background-image: url("../assets/stars/chinappa.jpg");
 }
+.box-3 {
+  background-image: url("../assets/stars/nikhild.jpg");
+}
+.box-4 {
+  background-image: url("../assets/stars/papon.jpg");
+}
 
 @media only screen and (max-width: 768px) {
   .box {
