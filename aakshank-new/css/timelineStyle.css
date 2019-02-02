@@ -8,7 +8,7 @@
   /* background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.jpg); */
   background-size: cover;
   width: 350px;
-  height: 600px;
+  height: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,7 +32,7 @@
 @media only screen and (max-width: 768px) {
   .box {
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
 }
 
@@ -210,4 +210,27 @@
 
 .mySlides {
   display: none;
+}
+
+.day-div {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .day-div {
+    height: 50vh;
+  }
+}
+
+#day-1 {
+  background-color: red;
+}
+#day-1 {
+  background-color: blue;
+}
+#day-1 {
+  background-color: pink;
+}
+#day-1 {
+  background-color: green;
 }
