@@ -5,7 +5,7 @@
   background-color: #43ace3 !important;
 }
 .box {
-  /* background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.jpg); */
+  /* background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.webp); */
   background-size: cover;
   width: 350px;
   height: 90%;
@@ -16,17 +16,17 @@
 }
 
 .box-1 {
-  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.jpg);
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.webp);
 }
 
 .box-2 {
-  background-image: url("../assets/stars/chinappa.jpg");
+  background-image: url("../assets/stars/chinappa.webp");
 }
 .box-3 {
-  background-image: url("../assets/stars/nikhild.jpg");
+  background-image: url("../assets/stars/nikhild.webp");
 }
 .box-4 {
-  background-image: url("../assets/stars/papon.jpg");
+  background-image: url("../assets/stars/papon.webp");
 }
 
 @media only screen and (max-width: 768px) {
