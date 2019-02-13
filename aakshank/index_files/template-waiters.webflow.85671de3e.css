@@ -1302,17 +1302,17 @@ p {
 }
 
 .gallery-slide {
-  background-image: url("../assets/img/events1/g2.jpg");
+  background-image: url("http://uploads.webflow.com/55d300d5b0d844a16f7b180f/559fc28bbcccd97730700684_Gallery-9.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .gallery-slide._2 {
-  background-image: url("../assets/img/events1/g1.jpg");
+  background-image: url("http://uploads.webflow.com/55d300d5b0d844a16f7b180f/559fbfdfcbb5f93e0e6a554f_Gallery-2.jpg");
 }
 
 .gallery-slide._3 {
-  background-image: url("../assets/img/events1/g4.jpg");
+  background-image: url("http://uploads.webflow.com/55d300d5b0d844a16f7b180f/559fc061cbb5f93e0e6a5562_Gallery-7.jpg");
 }
 
 .gallery-slider-nav {
