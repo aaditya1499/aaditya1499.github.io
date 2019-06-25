@@ -5,9 +5,9 @@ let scanner = new Instascan.Scanner({
 scanner.addListener("scan", function(content) {
   alert(content);
   mainkey = content;
-  scanner.destroy(function(status) {
-    console.log(status);
-  });
+  // scanner.destroy(function(status) {
+  //   console.log(status);
+  // });
   var docRef = db.collection("Components").doc(mainkey);
 
   docRef
