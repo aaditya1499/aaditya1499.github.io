@@ -10,7 +10,7 @@ scanner.addListener("scan", function(content) {
 
 function getContents(key) {
   scanner.stop();
-
+  $("#preview-div").css("display", "none");
   var db = firebase.firestore();
   var docRef = db.collection("Components").doc(key);
 
@@ -24,7 +24,7 @@ function getContents(key) {
           doc.data().name +
           "</h3><br><h3> Use : " +
           doc.data().use +
-          "</h3><br><h3> diagram : <img src=" +
+          "</h3><br><h3> diagram : <img class='diag-img' src=" +
           doc.data().diagram +
           ">" +
           "</h3><br><h3> Discription : " +

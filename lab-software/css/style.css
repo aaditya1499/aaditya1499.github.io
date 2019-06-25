@@ -93,6 +93,10 @@ canvas {
   display: none !important;
 }
 
+.diag-img {
+  width: 100%;
+}
+
 /* #diagram {
   opacity: 0;
   position: absolute;
