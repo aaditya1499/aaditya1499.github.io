@@ -1350,7 +1350,7 @@ exports.Parser = Parser;
 
 'use strict';
 
-// A bézier path containing a set of path commands similar to a SVG path.
+// A bï¿½zier path containing a set of path commands similar to a SVG path.
 // Paths can be drawn on a context using `draw`.
 function Path() {
     this.commands = [];
@@ -2530,7 +2530,7 @@ function glyphToOps(glyph) {
         var dy;
         var cmd = path.commands[i];
         if (cmd.type === 'Q') {
-            // CFF only supports bézier curves, so convert the quad to a bézier.
+            // CFF only supports bï¿½zier curves, so convert the quad to a bï¿½zier.
             var _13 = 1 / 3;
             var _23 = 2 / 3;
 
@@ -9112,7 +9112,7 @@ var p5 = function(sketch, node, sync) {
     for (var i = 0; i < canvases.length; i++) {
       var k = canvases[i];
       if (k.dataset.hidden === 'true') {
-        k.style.visibility = '';
+        k.style.display = 'block';
         delete(k.dataset.hidden);
       }
     }
@@ -10894,7 +10894,7 @@ function friendlyWelcome() {
   ' \\/|_|\\/ '+
   '\n\n%c> p5.js says: Welcome! '+
   'This is your friendly debugger. ' +
-  'To turn me off switch to using “p5.min.js”.',
+  'To turn me off switch to using ï¿½p5.min.jsï¿½.',
   'background-color:'+astrixBgColor+';color:' + astrixTxtColor +';',
   'background-color:'+welcomeBgColor+';color:' + welcomeTextColor +';'
   );
@@ -13594,7 +13594,7 @@ p5.prototype.createCanvas = function(w, h, renderer) {
   // set to invisible if still in setup (to prevent flashing with manipulate)
   if (!this._setupDone) {
     c.dataset.hidden = true; // tag to show later
-    c.style.visibility='hidden';
+    c.style.display='none';
   }
 
   if (this._userNode) { // user input node case
@@ -13846,7 +13846,7 @@ window.performance.now = (function(){
 // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
 // http://my.opera.com/emoller/blog/2011/12/20/
 // requestanimationframe-for-smart-er-animating
-// requestAnimationFrame polyfill by Erik Möller
+// requestAnimationFrame polyfill by Erik Mï¿½ller
 // fixes from Paul Irish and Tino Zijdel
 (function() {
   var lastTime = 0;
@@ -20166,7 +20166,7 @@ p5.prototype.set = function (x, y, imgOrCol) {
 /**
  * Updates the display window with the data in the pixels[] array.
  * Use in conjunction with loadPixels(). If you're only reading pixels from
- * the array, there's no need to call updatePixels() — updating is only
+ * the array, there's no need to call updatePixels() ï¿½ updating is only
  * necessary to apply changes. updatePixels() should be called anytime the
  * pixels array is manipulated or set() is called.
  *
@@ -26264,7 +26264,7 @@ p5.prototype._angleMode = constants.RADIANS;
  * @return {Number}       the arc cosine of the given value
  *
  * @example
- * <div class= “norender">
+ * <div class= ï¿½norender">
  * <code>
  * var a = PI;
  * var c = cos(a);
@@ -26274,7 +26274,7 @@ p5.prototype._angleMode = constants.RADIANS;
  * </code>
  * </div>
  *
- * <div class= “norender">
+ * <div class= ï¿½norender">
  * <code>
  * var a = PI + PI/4.0;
  * var c = cos(a);
@@ -26302,7 +26302,7 @@ p5.prototype.acos = function(ratio) {
  * @return {Number}       the arc sine of the given value
  *
  * @example
- * <div class= “norender">
+ * <div class= ï¿½norender">
  * <code>
  * var a = PI + PI/3;
  * var s = sin(a);
@@ -26312,7 +26312,7 @@ p5.prototype.acos = function(ratio) {
  * </code>
  * </div>
  *
- * <div class= “norender">
+ * <div class= ï¿½norender">
  * <code>
  * var a = PI + PI/3.0;
  * var s = sin(a);
@@ -26341,7 +26341,7 @@ p5.prototype.asin = function(ratio) {
  * @return {Number}       the arc tangent of the given value
  *
  * @example
- * <div class= “norender">
+ * <div class= ï¿½norender">
  * <code>
  * var a = PI + PI/3;
  * var t = tan(a);
@@ -26351,7 +26351,7 @@ p5.prototype.asin = function(ratio) {
  * </code>
  * </div>
  *
- * <div class= “norender">
+ * <div class= ï¿½norender">
  * <code>
  * var a = PI + PI/3.0;
  * var t = tan(a);
@@ -26510,7 +26510,7 @@ p5.prototype.tan = function(angle) {
  * Converts a radian measurement to its corresponding value in degrees.
  * Radians and degrees are two ways of measuring the same thing. There are
  * 360 degrees in a circle and 2*PI radians in a circle. For example,
- * 90° = PI/2 = 1.5707964.
+ * 90ï¿½ = PI/2 = 1.5707964.
  *
  * @method degrees
  * @param  {Number} radians the radians value to convert to degrees
@@ -26518,7 +26518,7 @@ p5.prototype.tan = function(angle) {
  *
  *
  * @example
- * <div class= “norender">
+ * <div class= ï¿½norender">
  * <code>
  * var rad = PI/4;
  * var deg = degrees(rad);
@@ -26536,14 +26536,14 @@ p5.prototype.degrees = function(angle) {
  * Converts a degree measurement to its corresponding value in radians.
  * Radians and degrees are two ways of measuring the same thing. There are
  * 360 degrees in a circle and 2*PI radians in a circle. For example,
- * 90° = PI/2 = 1.5707964.
+ * 90ï¿½ = PI/2 = 1.5707964.
  *
  * @method radians
  * @param  {Number} degrees the degree value to convert to radians
  * @return {Number}         the converted angle
  *
  * @example
- * <div class= “norender">
+ * <div class= ï¿½norender">
  * <code>
  * var deg = 45.0;
  * var rad = radians(deg);

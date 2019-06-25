@@ -1,30 +1,22 @@
 <html>
 	<head>
-		<title>My Application</title>
-		<link href="./images/flower02.jpeg" rel="icon" />
-		<link href="./css/style.css" rel="stylesheet" />
-		<meta charset="UTF-8">
-    <title>Firebase 1</title>
-<script type="text/javascript" src="js/qrcode.js"></script>
-<script type="text/javascript" src="js/html5-qrcode.js">
-</script>
-    <script src="libraries/p5.js" type="text/javascript"></script>
+	  <title>My Application</title>
+	  <link href="./images/flower02.jpeg" rel="icon" />
+	  <link href="./css/style.css" rel="stylesheet" />
+	  <meta charset="UTF-8">
+	  <title>Firebase 1</title>
+	  <script type="text/javascript" src="js/qrcode.js"></script>
+	  <script type="text/javascript" src="js/html5-qrcode.js"></script>
+	  <script src="libraries/p5.js" type="text/javascript"></script>
+	  <script src="libraries/p5.dom.js" type="text/javascript"></script>
 
-    <script src="libraries/p5.dom.js" type="text/javascript"></script>
-<!-- <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script> -->
-<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-storage.js"></script>
-    <script src="js/sketch.js" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
-    <style>
-      body {
-        padding: 20px;
-      }
-    </style>
+	  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+	  <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-storage.js"></script>
+      <script src="js/sketch.js" type="text/javascript"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	</head>
 	<body>
 	<div id="container">
@@ -57,35 +49,39 @@
 	 	</ul>
 	 </div>	
 	 <div id="content">
-	 <br>
-	 <center>
-	 	<div style="float: left;width:50%">
-	 	<h1>INSERT THE FOLLOWING DATA TO CREATE A COMPONENT</h1>
-	 	 <p>
-      component name: <input value="" id="name"></input><br/><br>
-      component diagram: <input type="file" accept="image/*"  id="diagram"></input><br/><br/>
-      component description : <textarea value="" id="desc"></textarea><br><br>
-      component usage : <textarea value="" id="use"></textarea><br><br>
-       component quantity : <input value="" id="quantity"></input><br/><br>
-      <button id="submit">submit</button>
-    </p>
-
-   <br></div>
-   <div style="float: right;width:50%">
-    <div> <h3>QR CODE OF Component : </h3></div><br>
-
-    <div id="qrcode"></div>
-
-
-<button type="submit" class="btn btn-success btn-default" id="show_button" onclick="printDiv('qrcode')"><span class="fa fa-print"></span> Print QR CODE</button>
-</div>
-	 </center>
+	 	<div>
+		  <center>
+			<h1>INSERT THE FOLLOWING DATA TO CREATE A COMPONENT</h1>
+			<div style="margin-top: 30px;">
+				<label for="name" class="add-label">Component name</label>
+				<input value="" id="name" placeholder="component name"></input><br/><br>
+				<label for="diagram" class="add-label">Component Diagram</label>
+				<input width="" type="file" accept="image/*" value="aaa"  id="diagram" placeholder="Upload Diagram"></input><br/><br/>
+				<div class="row">
+					<label for="desc" class="add-label">Component Description</label>
+					<textarea value="" id="desc" placeholder="component description"></textarea><br><br>
+				</div>
+				<div class="row">
+					<label style="display: inline-block" for="use" class="add-label">component name</label>
+					<textarea style="display: inline-block" value="" id="use" placeholder="component usage"></textarea><br><br>
+				</div>
+				<label for="quantity" class="add-label">component name</label>
+				<input value="" type="number" id="quantity" placeholder="component quantity"></input><br/><br>
+				<input style="width: 15%;" type="button" id="submit" value="Submit">
+			</div>
+		  </center>	
+	    </div>
+   	    <div id="qr">
+          <div><h3>QR CODE OF Component : </h3></div><br>
+          <div id="qrcode"></div>
+		  <button type="submit" class="btn btn-success btn-default" id="show_button" onclick="printDiv('qrcode')"><span class="fa fa-print"></span> Print QR CODE</button>
+		</div>
 	 </div>	
 	 <div id="footer">
 	 <br>
-	 <center>
-	 	<h1>All Right Reserved &copy; 2019-2020 ,DesignBy Aditya And Shreyansh</h1>
-	 </center>
+		<center>
+		 <h1>All Right Reserved &copy; 2019-2020 ,DesignBy Aditya And Shreyansh</h1>
+		</center>
 	 </div>	
 	</div>	
 	<script type="text/javascript">

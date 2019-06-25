@@ -5,7 +5,9 @@ let scanner = new Instascan.Scanner({
 scanner.addListener("scan", function(content) {
   alert(content);
   mainkey = content;
-
+  scanner.destroy(function(status) {
+    console.log(status);
+  });
   var docRef = db.collection("Components").doc(mainkey);
 
   docRef
@@ -39,7 +41,11 @@ scanner.addListener("scan", function(content) {
 Instascan.Camera.getCameras()
   .then(function(cameras) {
     if (cameras.length > 0) {
-      scanner.start(cameras[0]);
+      if (cameras.length == 1) {
+        scanner.start(cameras[0]);
+      } else {
+        scanner.start(cameras[1]);
+      }
     } else {
       console.error("No cameras found.");
     }
@@ -48,11 +54,3 @@ Instascan.Camera.getCameras()
     console.error(e);
   });
 var db = firebase.firestore();
-
-/*const list_div=document.querySelector("#list_div");
-
-db.collection("Components").get().then(function(querySnapshot) {
-    querySnapshot.forEach(function(doc) {
-        list_div.innerHTML += "<br><h3> name : "+doc.data().name+"</h3><br><h3> Use : "+doc.data().use+"</h3><br><h3> diagram : <img src="+doc.data().diagram+">"+"</h3><br><h3> Discription : "+doc.data().desc+"</h3><br><h3> Quantity : "+doc.data().quantity+"</h3><br><h3>";
-    });
-});*/

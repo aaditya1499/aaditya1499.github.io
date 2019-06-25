@@ -53,18 +53,6 @@ function setup() {
       console.log(error);
     }
   );
-  // Start loading the data
-  loadFirebase();
-}
-
-function loadFirebase() {
-  var ref = database.ref("component");
-  ref.on("value", gotData, errData);
-}
-
-function errData(error) {
-  console.log("Something went wrong.");
-  console.log(error);
 }
 
 // The data comes back as an object
@@ -175,6 +163,7 @@ function sendToFirebase() {
             adminEmail: email
           })
           .then(ref => {
+            $("#qr").css("display", "block");
             updateQRCode(ref.id);
             console.log("Added document with ID: ", ref.id);
           });
