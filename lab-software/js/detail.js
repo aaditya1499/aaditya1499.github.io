@@ -5,12 +5,16 @@ let scanner = new Instascan.Scanner({
 });
 scanner.addListener("scan", function(content) {
   alert(content);
-  mainkey = content;
+  getContents(content);
+});
+
+function getContents(key) {
   scanner.destroy(function(status) {
     console.log(status);
   });
+
   var db = firebase.firestore();
-  var docRef = db.collection("Components").doc(mainkey);
+  var docRef = db.collection("Components").doc(key);
 
   docRef
     .get()
@@ -39,7 +43,7 @@ scanner.addListener("scan", function(content) {
     .catch(function(error) {
       console.log("Error getting document:", error);
     });
-});
+}
 Instascan.Camera.getCameras()
   .then(function(cameras) {
     if (cameras.length > 0) {
