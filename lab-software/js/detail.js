@@ -9,9 +9,7 @@ scanner.addListener("scan", function(content) {
 });
 
 function getContents(key) {
-  scanner.destroy(function(status) {
-    console.log(status);
-  });
+  scanner.stop();
 
   var db = firebase.firestore();
   var docRef = db.collection("Components").doc(key);
