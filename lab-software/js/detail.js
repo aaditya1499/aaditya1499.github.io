@@ -1,6 +1,7 @@
 var mainkey;
 let scanner = new Instascan.Scanner({
-  video: document.getElementById("preview")
+  video: document.getElementById("preview"),
+  mirror: false
 });
 scanner.addListener("scan", function(content) {
   alert(content);
@@ -8,6 +9,7 @@ scanner.addListener("scan", function(content) {
   // scanner.destroy(function(status) {
   //   console.log(status);
   // });
+  var db = firebase.firestore();
   var docRef = db.collection("Components").doc(mainkey);
 
   docRef
@@ -53,4 +55,3 @@ Instascan.Camera.getCameras()
   .catch(function(e) {
     console.error(e);
   });
-var db = firebase.firestore();
